@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations | Aurelia House</title>
+  <meta name="description" content="Reserve a table at Aurelia House for tasting menus, lounge dining, celebrations, and private events.">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header light" data-header>
+    <a class="brand" href="index.html" aria-label="Aurelia House home"><span class="brand-mark">AH</span><span>Aurelia House</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle><span></span><span></span></button>
+    <nav class="site-nav" data-nav>
+      <a href="index.html">Home</a>
+      <a href="menus.html">Menus</a>
+      <a class="active" href="reservations.html">Reservations</a>
+      <a href="private-dining.html">Private Dining</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero reservation-hero">
+      <div>
+        <p class="eyebrow">Reservations</p>
+        <h1>Reserve the evening.</h1>
+        <p>Dinner reservations open 45 days in advance. Parties of seven or more are welcomed through our events team.</p>
+      </div>
+    </section>
+
+    <section class="section-pad reservation-page">
+      <div class="reservation-copy">
+        <p class="section-label">Book A Table</p>
+        <h2>Tell us how the night should unfold.</h2>
+        <p>Our dining room is open Tuesday through Sunday from 5:30 PM. The lounge accepts limited walk-ins after 9 PM, with the full After Dark menu available at the bar.</p>
+        <div class="hours-list">
+          <span>Dinner: 5:30 PM - 10:30 PM</span>
+          <span>Lounge: 9:00 PM - midnight</span>
+          <span>Closed Mondays</span>
+        </div>
+      </div>
+
+      <form class="reservation-form" data-reservation-form>
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Date
+          <input type="date" name="date" required>
+        </label>
+        <label>
+          Guests
+          <select name="guests" required>
+            <option value="">Select guests</option>
+            <option>2 guests</option>
+            <option>3 guests</option>
+            <option>4 guests</option>
+            <option>5 guests</option>
+            <option>6 guests</option>
+            <option>7+ guests</option>
+          </select>
+        </label>
+        <label>
+          Time
+          <select name="time" required>
+            <option value="">Select time</option>
+            <option>5:30 PM</option>
+            <option>6:45 PM</option>
+            <option>8:00 PM</option>
+            <option>9:15 PM</option>
+          </select>
+        </label>
+        <label>
+          Menu
+          <select name="menu" required>
+            <option value="">Select menu</option>
+            <option>Grand Tasting</option>
+            <option>Garden Atelier</option>
+            <option>After Dark</option>
+          </select>
+        </label>
+        <label class="wide">
+          Occasion or notes
+          <textarea name="notes" rows="4" placeholder="Allergies, celebrations, seating preferences"></textarea>
+        </label>
+        <button class="button button-primary" type="submit">Request Reservation</button>
+        <p class="form-status" role="status" data-form-status></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">AH</span><span>Aurelia House</span></a><p>18 Grafton Place, New York, NY</p></div>
+    <div class="footer-links"><a href="menus.html">Menus</a><a href="private-dining.html">Private Dining</a><a href="visit.html">Visit</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

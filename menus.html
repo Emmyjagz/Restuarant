@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menus | Aurelia House</title>
+  <meta name="description" content="Explore Aurelia House tasting menus, wine pairings, lounge service, and private dining menu options.">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header light" data-header>
+    <a class="brand" href="index.html" aria-label="Aurelia House home"><span class="brand-mark">AH</span><span>Aurelia House</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle><span></span><span></span></button>
+    <nav class="site-nav" data-nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="menus.html">Menus</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="private-dining.html">Private Dining</a>
+      <a href="visit.html">Visit</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero menu-hero">
+      <div>
+        <p class="eyebrow">Menus</p>
+        <h1>Seasonal, precise, quietly theatrical.</h1>
+        <p>Menus change with the market and are designed around pace, temperature, fragrance, and the pleasure of a room that never rushes you.</p>
+      </div>
+    </section>
+
+    <section class="section-pad menu-tabs-section">
+      <div class="tab-list" role="tablist" aria-label="Dining menus">
+        <button class="tab-button active" type="button" role="tab" aria-selected="true" data-tab-target="grand">Grand Tasting</button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-target="garden">Garden Atelier</button>
+        <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-target="lounge">After Dark</button>
+      </div>
+
+      <article class="menu-panel active" id="grand" data-tab-panel>
+        <div>
+          <p class="section-label">Nine Courses | $215</p>
+          <h2>Grand Tasting</h2>
+          <p>A complete expression of the house: sea, field, fire, cellar, and pastry.</p>
+        </div>
+        <div class="menu-list visual-menu">
+          <article><img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=600&q=84" alt="Oyster and cucumber fine dining course"><p><span>Oyster leaf</span> cucumber granite, champagne vinegar</p></article>
+          <article><img src="https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=600&q=84" alt="Caviar and blini dish"><p><span>Royal caviar</span> buckwheat blini, cultured cream</p></article>
+          <article><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=84" alt="Scallop fine dining course"><p><span>Day-boat scallop</span> yuzu kosho, bronze fennel</p></article>
+          <article><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=84" alt="Smoked squab with sauce"><p><span>Smoked squab</span> black truffle, preserved cherry</p></article>
+          <article><img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&q=84" alt="Citrus dessert souffle"><p><span>Citrus souffle</span> mandarin curd, vanilla salt</p></article>
+        </div>
+      </article>
+
+      <article class="menu-panel" id="garden" data-tab-panel>
+        <div>
+          <p class="section-label">Seven Courses | $175</p>
+          <h2>Garden Atelier</h2>
+          <p>A vegetable-led tasting menu with dairy, grains, herbs, fruit, and optional zero-proof pairings.</p>
+        </div>
+        <div class="menu-list visual-menu">
+          <article><img src="https://images.unsplash.com/photo-1546039907-7fa05f864c02?auto=format&fit=crop&w=600&q=84" alt="Carrot tartare vegetable dish"><p><span>Carrot tartare</span> smoked almond, nasturtium</p></article>
+          <article><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=84" alt="Roasted vegetable fine dining plate"><p><span>Roasted sunchoke</span> brown butter, pear, sorrel</p></article>
+          <article><img src="https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=600&q=84" alt="Heritage grains and mushrooms"><p><span>Heritage grains</span> wild mushroom, comte foam</p></article>
+          <article><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=600&q=84" alt="Salt baked beetroot dish"><p><span>Salt-baked beetroot</span> hibiscus, walnut, citrus</p></article>
+          <article><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=84" alt="Apple and verbena dessert"><p><span>Orchard apple</span> verbena, oat milk ice</p></article>
+        </div>
+      </article>
+
+      <article class="menu-panel" id="lounge" data-tab-panel>
+        <div>
+          <p class="section-label">From 9 PM | $145</p>
+          <h2>After Dark</h2>
+          <p>A late-evening salon menu for champagne, shellfish, charcoal, and rare digestifs.</p>
+        </div>
+        <div class="menu-list visual-menu">
+          <article><img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=600&q=84" alt="Shellfish platter with lobster and oysters"><p><span>Shellfish plateau</span> lobster, prawn, oyster, lemon</p></article>
+          <article><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=84" alt="Grilled wagyu skewer"><p><span>Wagyu skewer</span> smoked soy, horseradish</p></article>
+          <article><img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=84" alt="Truffle omelette with herbs"><p><span>Truffle omelette</span> fine herbs, aged parmesan</p></article>
+          <article><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=84" alt="Chocolate delice dessert"><p><span>Chocolate delice</span> coffee caramel, sea salt</p></article>
+          <article><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=84" alt="Digestif cocktail service"><p><span>Cellar digestif</span> curated tableside trolley</p></article>
+        </div>
+      </article>
+    </section>
+
+    <section class="wine-band">
+      <div>
+        <p class="section-label">Pairings</p>
+        <h2>Wine, champagne, and zero-proof flights.</h2>
+      </div>
+      <div class="pairing-grid">
+        <div><strong>$95</strong><span>Classic pairing</span></div>
+        <div><strong>$180</strong><span>Reserve pairing</span></div>
+        <div><strong>$72</strong><span>Botanical pairing</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">AH</span><span>Aurelia House</span></a><p>18 Grafton Place, New York, NY</p></div>
+    <div class="footer-links"><a href="menus.html">Menus</a><a href="reservations.html">Reserve</a><a href="visit.html">Visit</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
